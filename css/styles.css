@@ -1,74 +1,24 @@
-/* Shared layout helpers */
-.container {
-  @apply max-w-5xl mx-auto px-6;
-}
+/* Plain CSS only — no Tailwind directives */
 
-.section {
-  @apply py-20;
-}
-
-/* Typography */
-.section-title {
-  @apply text-3xl font-bold mb-6;
-}
-
-.section-text {
-  @apply text-gray-700 dark:text-gray-300 leading-relaxed;
-}
-
-.hero-text {
-  @apply max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400;
-}
-
-/* Navbar */
-.nav-link {
-  @apply hover:text-blue-500 transition;
-}
-
-.theme-btn {
-  @apply px-3 py-1 rounded border text-sm;
-}
-
-/* Cards */
-.card {
-  @apply p-6 bg-white dark:bg-gray-800 rounded-lg shadow;
-}
-
-.card-title {
-  @apply text-xl font-semibold mb-2;
-}
-
-.card-text {
-  @apply text-gray-600 dark:text-gray-400;
-}
-
-/* Profile image container */
+/* Profile image wrapper */
 .profile-wrapper {
   width: 144px;
   height: 144px;
   margin: 0 auto 1.5rem;
   border-radius: 9999px;
   overflow: hidden;
-  border: 4px solid rgb(209 213 219); /* gray-300 */
+  border: 4px solid #d1d5db; /* gray-300 */
 }
 
-/* Profile image */
+/* Image behavior */
 .profile-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top; /* important for this photo */
+  object-position: center top;
 }
 
+/* Dark mode border */
 .dark .profile-wrapper {
-  border-color: rgb(55 65 81); /* gray-700 */
-}
-
-/* Timeline */
-.timeline-item {
-  @apply border-l-4 border-blue-500 pl-4;
-}
-
-.timeline-date {
-  @apply text-sm text-gray-500;
+  border-color: #374151; /* gray-700 */
 }
