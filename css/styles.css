@@ -1,0 +1,57 @@
+/* Shared layout helpers */
+.container {
+  @apply max-w-5xl mx-auto px-6;
+}
+
+.section {
+  @apply py-20;
+}
+
+/* Typography */
+.section-title {
+  @apply text-3xl font-bold mb-6;
+}
+
+.section-text {
+  @apply text-gray-700 dark:text-gray-300 leading-relaxed;
+}
+
+.hero-text {
+  @apply max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400;
+}
+
+/* Navbar */
+.nav-link {
+  @apply hover:text-blue-500 transition;
+}
+
+.theme-btn {
+  @apply px-3 py-1 rounded border text-sm;
+}
+
+/* Cards */
+.card {
+  @apply p-6 bg-white dark:bg-gray-800 rounded-lg shadow;
+}
+
+.card-title {
+  @apply text-xl font-semibold mb-2;
+}
+
+.card-text {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Profile */
+.profile-img {
+  @apply w-32 h-32 mx-auto rounded-full object-cover mb-6 border-4 border-gray-300 dark:border-gray-700;
+}
+
+/* Timeline */
+.timeline-item {
+  @apply border-l-4 border-blue-500 pl-4;
+}
+
+.timeline-date {
+  @apply text-sm text-gray-500;
+}
