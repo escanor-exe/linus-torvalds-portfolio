@@ -42,10 +42,24 @@
   @apply text-gray-600 dark:text-gray-400;
 }
 
-/* Profile */
-.profile-img {
-  @apply w-32 h-32 mx-auto rounded-full object-cover mb-6 border-4 border-gray-300 dark:border-gray-700;
+/* Profile image container */
+.profile-wrapper {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 1.5rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 4px solid rgb(209 213 219); /* gray-300 */
 }
+
+/* Profile image */
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* important for this photo */
+}
+
 
 /* Timeline */
 .timeline-item {
