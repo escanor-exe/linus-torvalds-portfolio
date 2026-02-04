@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("themeToggle");
-  const html = document.documentElement;
+  const root = document.documentElement;
 
   toggle.addEventListener("click", () => {
-    html.classList.toggle("dark");
-    toggle.textContent = html.classList.contains("dark") ? "☀️" : "🌙";
+    root.classList.toggle("dark");
+    toggle.textContent = root.classList.contains("dark") ? "☀️" : "🌙";
   });
 });
