@@ -60,6 +60,9 @@
   object-position: center top; /* important for this photo */
 }
 
+.dark .profile-wrapper {
+  border-color: rgb(55 65 81); /* gray-700 */
+}
 
 /* Timeline */
 .timeline-item {
